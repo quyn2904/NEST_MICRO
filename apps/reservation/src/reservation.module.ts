@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { ReservationsService } from './reservation.service';
-import { ReservationsController } from './reservation.controller';
+import { ReservationService } from './reservation.service';
+import { ReservationController } from './reservation.controller';
 import { DatabaseModule, LoggerModule } from '@app/common';
 import { ReservationRepository } from './reservation.repository';
 import {
@@ -16,7 +16,7 @@ import {
     ]),
     LoggerModule,
   ],
-  controllers: [ReservationsController],
-  providers: [ReservationsService, ReservationRepository],
+  controllers: [ReservationController],
+  providers: [ReservationService, ReservationRepository],
 })
-export class ReservationsModule {}
+export class ReservationModule {}

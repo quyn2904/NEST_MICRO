@@ -4,7 +4,7 @@ import { UpdateReservationDto } from './dto/update-reservation.dto';
 import { ReservationRepository } from './reservation.repository';
 
 @Injectable()
-export class ReservationsService {
+export class ReservationService {
   constructor(
     protected readonly reservationRepository: ReservationRepository,
   ) {}
